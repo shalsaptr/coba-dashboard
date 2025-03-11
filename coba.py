@@ -4,7 +4,7 @@ import pandas as pd
 # Load data dari file Excel
 @st.cache_data
 def load_data():
-    file_path = "D:\LATIHAN DASHBOARD SSH\coba dashboard SSH TUBAN.xlsx"  # Sesuaikan dengan lokasi file
+    file_path = "coba dashboard SSH TUBAN.xlsx"  # Sesuaikan dengan lokasi file
     df = pd.read_excel(file_path, sheet_name=0)  # Pastikan sheet_name sesuai
     df.columns = df.columns.str.strip()  # Hapus spasi ekstra dari nama kolom
     return df
