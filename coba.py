@@ -61,3 +61,4 @@ if kode_kelompok and kode_barang:
         else:
             st.warning("Data tidak ditemukan. Cek kembali kode yang diinput.")
     except KeyError as e:
+        st.error(f"Kolom tidak ditemukan: {e}. Periksa kembali struktur file Excel.")
